@@ -4,12 +4,12 @@ export default {
   render(image: Image){
     return {
       id: image.id,
-      url: `http//localhost:3333/uploads/${image.path}`,
+      url: `http://localhost:3333/uploads/${image.path}`,
     
     }
   }  ,
 
-  renderMany(imgages: Image[]){
-      return imgages.map(imgage => this.render(imgage));
+  renderMany(images: Image[]){
+      return images.map(image => this.render(image));
   }
 }
